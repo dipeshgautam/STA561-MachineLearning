@@ -20,16 +20,19 @@ colors2 <- c("blue", "cyan", "purple")
 colors3 <- c("green", "darkolivegreen1", "darkgreen")
 
 #jpeg(file ="dpgmm.jpeg", width =1000, height =600)
-png("dpgmm.png", width =1000, height =600)
+png("dpgmm.png", width =1200, height =600)
 par(mfrow=c(1,3))
 
 barplot(as.matrix(cluster_burgers[1:3,1:14]), beside=T, 
-        xlab= "Burgers etc.", horiz=T,las =2,yaxt="n", col=colors1)
+        xlab= "Burgers etc.", horiz=T,las =2,yaxt="n", col=colors1, cex.axis=1.5,
+        cex.lab = 2)
 barplot(as.matrix(cluster_lowfat[3:5,1:14]), beside=T,horiz=T, 
-        xlab = "Lowfat drinks",las=2,col=colors2)
+        xlab = "Lowfat drinks",las=2,col=colors2, cex.names=1.5, cex.axis=1.5,
+        cex.lab = 2)
 mtext("Nutritional profiles for select items from three different clusters using DPGMM",
-      outer = F, cex=1.3)
+      outer = F, cex=2)
 barplot(as.matrix(cluster_breakfast[2:4,1:14]), beside=T,horiz=T, 
-        xlab = "Breakfast food", las=2,col=colors3)
+        xlab = "Breakfast food", las=2,col=colors3, cex.names=1.5, cex.axis=1.5,
+        cex.lab = 2)
 #dev.copy(png, "plot1.png")
 dev.off()
