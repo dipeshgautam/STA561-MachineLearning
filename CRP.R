@@ -16,17 +16,20 @@ crp = function(num.customers, alpha) {
   table
 }
 
+
+png("crp.png", width = 1000, height=600)
 par(mfrow=c(3,1))
 plot(
   table(crp(10000, 1))
- , xlab="Alpha=1", ylab='', main='CRP with increasing alpha value'
+ , sub="Alpha=1", ylab='', main='CRP for different alpha values', cex.main=2,
+ cex.lab=1.5, col="red"
 )
 plot(
   table(crp(10000, 10))
-  , ylab="Number of occupants", xlab="Alpha=10", cex.names=2
+  , ylab="Number of occupants", sub="Alpha=10", cex.lab=1.5, col="green"
 )
 plot(
   table(crp(10000, 20))
-  ,xlab="Table number, alpha=20", ylab=''
+  ,xlab="Table number", sub="Alpha=20", ylab='', cex.lab=1.5, col="blue"
 )
-
+dev.off()
