@@ -1,3 +1,4 @@
+set.seed(1000)
 crp = function(num.customers, alpha) {
   table <- c(1)
   next.table <- 2
@@ -16,20 +17,30 @@ crp = function(num.customers, alpha) {
   table
 }
 
+tables =c()
+Alpha = c(1,5,10,20,30,50,70,100)
+for (alpha in Alpha){
+  tables = c(tables,max(crp(1000,alpha)))
+}
 
 png("crp.png", width = 1000, height=600)
-par(mfrow=c(3,1))
-plot(
-  table(crp(10000, 1))
- , sub="Alpha=1", ylab='', main='CRP for different alpha values', cex.main=2,
- cex.lab=1.5, col="red"
-)
-plot(
-  table(crp(10000, 10))
-  , ylab="Number of occupants", sub="Alpha=10", cex.lab=1.5, col="green"
-)
-plot(
-  table(crp(10000, 20))
-  ,xlab="Table number", sub="Alpha=20", ylab='', cex.lab=1.5, col="blue"
-)
+barplot(names.arg=Alpha, tables, col="red", main='CRP for different alpha values,
+        N=1000', xlab= "Alpha", ylab = "Number of occupants")
 dev.off()
+# 
+# png("crp.png", width = 1000, height=600)
+# par(mfrow=c(3,1))
+# plot(
+#   table(crp(10000, 1))
+#  , sub="Alpha=1", ylab='', main='CRP for different alpha values', cex.main=2,
+#  cex.lab=1.5, col="red"
+# )
+# plot(
+#   table(crp(10000, 3))
+#   , ylab="Number of occupants", sub="Alpha=10", cex.lab=1.5, col="green"
+# )
+# plot(
+#   table(crp(10000, 5))
+#   ,xlab="Table number", sub="Alpha=20", ylab='', cex.lab=1.5, col="blue"
+# )
+# dev.off()
