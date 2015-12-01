@@ -24,8 +24,8 @@ for (alpha in Alpha){
 }
 
 png("crp.png", width = 1000, height=600)
-barplot(names.arg=Alpha, tables, col="red", main='CRP for different alpha values,
-        N=1000', xlab= "Alpha", ylab = "Number of occupants")
+barplot(names.arg=Alpha, tables, col="darkred", main='CRP for different alpha values,
+        N=1000', xlab= "Alpha", ylab = "Number of distinct tables", cex.main=2.5)
 dev.off()
 # 
 # png("crp.png", width = 1000, height=600)
