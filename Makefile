@@ -6,7 +6,7 @@ final_project.pdf: final_project.tex crp.png polya-urn-1.png polya-urn-5.png pol
 polya-urn-1.png polya-urn-5.png polya-urn-50.png: Polya.R
 	Rscript Polya.R
 
-crp.png: CRP.y
+crp.png: CRP.R
 	Rscript CRP.R
 
 dpgmm.png: dpgmm-plot.R clusters-dpgmm.txt mcdonalds-normalized-data.txt
