@@ -32,7 +32,7 @@ polya_urn_model_plots = function(num_balls, alpha) {
   d5 = data.frame(x = x5, type = "run #5")
   d = rbind(d1, d2, d3, d4, d5)
   par(mfrow=c(3,1))
-  pl <- qplot(x = x, data = d, geom = "density", fill = 'green', alpha = I(0.85), xlab = "Color of ball in urn", ylab = "Density", main = paste("Polya urn with gaussian colors and alpha =", alpha)) +
+  pl <- qplot(x = x, data = d, geom = "density", fill = 'green', alpha = I(0.85), xlab = "Color of ball in urn", ylab = "Density") +
      facet_grid( . ~ type )
   pl + theme(legend.position="none")
 }
