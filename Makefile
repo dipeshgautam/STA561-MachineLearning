@@ -1,7 +1,7 @@
 final_project.pdf: final_project.tex crp.png polya-urn-1.png polya-urn-5.png polya-urn-50.png dpgmm.png dpmeans.png
-	pdflatex Report
-	pdflatex Report
-	pdflatex Report
+	pdflatex final_project
+	pdflatex final_project
+	pdflatex final_project
 
 polya-urn-1.png polya-urn-5.png polya-urn-50.png: Polya.R
 	Rscript Polya.R
@@ -20,4 +20,4 @@ dpmeans.png: dp-means-plot.R dp-means.R
     
     
     
-all: Report.pdf
+all: final_project.pdf
