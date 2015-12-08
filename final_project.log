@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  7 DEC 2015 22:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  7 DEC 2015 23:54
 entering extended mode
 **C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProj
 ect/final_project.tex
@@ -223,45 +223,78 @@ Package caption Warning: \subcaption
 (caption)                outside box or environment on input line 87.
 See the caption package documentation for explanation.
 
+Missing character: There is no Æ in font ptmr7t!
+Missing character: There is no › in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
 [2 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalPr
-oject/crp.png>] [3 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA5
-61/STA561FinalProject/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/Gra
-dClasses/SemIII/STA561/STA561FinalProject/polya-urn-5.png> <C:/Users/dipesh/Des
-ktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProject/polya-urn-50.png>
-]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 160.
+oject/crp.png>]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ <dpgmm.png, id=21, 1204.5pt x 602.25pt>
+File: dpgmm.png Graphic file (type png)
+ <use dpgmm.png>
+Package pdftex.def Info: dpgmm.png used on input line 127.
+(pdftex.def)             Requested size: 238.49341pt x 119.24402pt.
+
+<dpmeans.png, id=22, 1204.5pt x 602.25pt>
+File: dpmeans.png Graphic file (type png)
+ <use dpmeans.png>
+Package pdftex.def Info: dpmeans.png used on input line 130.
+(pdftex.def)             Requested size: 238.49341pt x 119.24402pt.
+ [3 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalP
+roject/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII
+/STA561/STA561FinalProject/polya-urn-5.png> <C:/Users/dipesh/Desktop/GoogleDriv
+e/GradClasses/SemIII/STA561/STA561FinalProject/polya-urn-50.png>]
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
+ [4 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalP
+roject/dpgmm.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA56
+1/STA561FinalProject/dpmeans.png>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 194.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [4]
+) [5]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
- [5]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 290.
+ [6]
 (C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
 ct\final_project.aux) ) 
 Here is how much of TeX's memory you used:
- 3058 strings out of 493706
- 46065 string characters out of 3144580
- 114631 words of memory out of 3000000
- 6366 multiletter control sequences out of 15000+200000
+ 3070 strings out of 493706
+ 46227 string characters out of 3144580
+ 115631 words of memory out of 3000000
+ 6376 multiletter control sequences out of 15000+200000
  20625 words of font info for 41 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,9n,40p,583b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on final_project.pdf (5 pages, 157125 bytes).
+.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on final_project.pdf (6 pages, 203709 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

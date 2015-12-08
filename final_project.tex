@@ -43,7 +43,7 @@ Commonly studied non-parametric Bayes techniques include:
 We worked on Indian Buffet Process (IBP) as part of our class, Statistical Computation, last semester where we used IBP to detect base images used to construct several images. Thus, we studied the application of non-parametric Bayes in feature allocation. We however could not dive into its applications in clustering, which motivated us to study them as part of our Machine Learning project this semester.
 
 In this report, we begin with a discussion of CRP and Polya Urn Models and proceed to the study of Dirichlet Process Mixture Models [1] and DP-Means Algorithm [2] for clustering. We then test the later two on McDonald's dataset of item nutrition profiles to obtain food clusters.
- 
+
 \section{Discussion of different clustering models}
 \subsection{Chinese Restaurant Process}
 Consider data points as customers who visit a restaurant and clusters as tables in that restaurant. CRP is based on the idea that there are infinite number of tables in the restaurant and infinite number of seats at each table. The first customer sits at a table. The (n+1)-st customer then sits at a new table with probability $\frac{\alpha}{(n+\alpha)}$ and on an occupied table with probability $\frac{n_k}{(n+\alpha)}$, where $n_k$ is the number of customers occupying table k.
@@ -97,8 +97,42 @@ G \sim D(G_0, \alpha)
 i.e., we model the distribution from which $y_i$'s are drawn as a mixture of distributions of the form $F(\theta)$, which is normal for a Gaussian DPMM, with $G$ as the mixing distribution over parameters $\theta$. Further, the prior over $G$ is a Dirichlet Process with base distribution $G_0$ and dispersion parameter $\alpha$.
 
 
+\subsection{DP-means}
+DP-Means is a hard clustering algorithm, obtained by the asymptotic behavior of a DPMM, which behaves similar to K-Means with the exception that a new cluster is created whenever a point is more than ƛ away from every existing cluster centroid. The algorithm is as follows:\\
+\\
+\textbf{Input:} $x_1,...,x_n:$ input data; $\lambda$: cluster penalty parameter\\
+\textbf{Output:} Clustering $\ell_1,..., \ell_k$ and number of clusters $k$\\
+\begin{enumerate}
+\item Init. $k=1$, $\ell_1=\{x_1,...,x_n\}$ and $\mu_1$ the global mean.
+\item Init. cluster indicators $z_i =1 $ for all $i=1,...,n.$
+\item Repeat until convergence
+\begin{itemize}
+\item For each point $x_i$
+\begin{itemize}
+\item Compute $d_{ic}= \|x_i-\mu_c\|^2$ for $c = 1,...,k$
+\item If $min_c d_{ic} >\lambda$, set $k = k+1, z_i =k$ and $\mu_k = x_i$
+\item Otherwise, set $z_i=$argmin$_c d_{ic}$.
+\end{itemize}
+\item Generate clusters $\ell_1,..., \ell_k$ based on $z_1,...,z_k: \ell_j = \{x_i|z_i =j\}$
+\item For each cluster $\ell_j$, compute $\mu_j = \frac{1}{|\ell_j|}\sum_{x\epsilon\ell_j}x$
+\end{itemize}
+\end{enumerate}
+
 \section{Method}
 \section{Results}
+We applied DPGMM and DP-Means to McDonald’s item-nutrition dataset to cluster food items into groups. We got around 11 clusters with separate clusters for burgers, lowfat drinks, breakfast items, desserts etc. Fig \ref{fig:dpgmm} and Fig. \ref{fig:dpmeans} show the nutrition profiles for select items from three different clusters for both DPGMM and DP-Means respectively.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.6\linewidth]{dpgmm.png}
+  \caption{DP-GMM}
+  \label{fig:dpgmm}
+  \includegraphics[width=.6\linewidth]{dpmeans.png}
+  \caption{DP-Means}
+  \label{fig:dpmeans}
+\end{figure}
+
+
 \section{Discussion}
 \section{Conclusions}
 
