@@ -25,20 +25,3 @@ barplot(names.arg=Alpha, tables, col="mediumvioletred", main='CRP for different 
         N=1000', xlab= "Alpha", ylab = "Number of distinct tables", cex.main=2.5,
         cex.axis = 1.25, cex.names=1.5, cex.lab=1.5)
 dev.off()
-# 
-# png("crp.png", width = 1000, height=600)
-# par(mfrow=c(3,1))
-# plot(
-#   table(crp(10000, 1))
-#  , sub="Alpha=1", ylab='', main='CRP for different alpha values', cex.main=2,
-#  cex.lab=1.5, col="red"
-# )
-# plot(
-#   table(crp(10000, 3))
-#   , ylab="Number of occupants", sub="Alpha=10", cex.lab=1.5, col="green"
-# )
-# plot(
-#   table(crp(10000, 5))
-#   ,xlab="Table number", sub="Alpha=20", ylab='', cex.lab=1.5, col="blue"
-# )
-# dev.off()
