@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  8 DEC 2015 00:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  8 DEC 2015 01:19
 entering extended mode
-**C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProj
-ect/final_project.tex
+**Report
 
-(C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProje
-ct/final_project.tex
+(C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
+ct\Report.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -121,7 +120,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@subtable=\count95
 )
 (C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
-ct\final_project.aux)
+ct\Report.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
@@ -139,7 +138,8 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box28
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen115
@@ -173,18 +173,18 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <crp.png, id=12, 1003.75p
-t x 602.25pt>
-File: crp.png Graphic file (type png)
-
-<use crp.png>
-Package pdftex.def Info: crp.png used on input line 62.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<plots/crp.png, id=12, 1003.75pt x 602.25pt>
+File: plots/crp.png Graphic file (type png)
+ <use plots/crp.png>
+Package pdftex.def Info: plots/crp.png used on input line 62.
 (pdftex.def)             Requested size: 198.7425pt x 119.24402pt.
- <polya-urn-1.png, id=13, 602.25pt x 200.75pt>
-File: polya-urn-1.png Graphic file (type png)
 
-<use polya-urn-1.png>
-Package pdftex.def Info: polya-urn-1.png used on input line 81.
+<plots/polya-urn-1.png, id=13, 602.25pt x 200.75pt>
+File: plots/polya-urn-1.png Graphic file (type png)
+
+<use plots/polya-urn-1.png>
+Package pdftex.def Info: plots/polya-urn-1.png used on input line 81.
 (pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
@@ -201,10 +201,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 82.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 82.
-<polya-urn-5.png, id=14, 602.25pt x 200.75pt>
-File: polya-urn-5.png Graphic file (type png)
- <use polya-urn-5.png>
-Package pdftex.def Info: polya-urn-5.png used on input line 84.
+<plots/polya-urn-5.png, id=14, 602.25pt x 200.75pt>
+File: plots/polya-urn-5.png Graphic file (type png)
+
+<use plots/polya-urn-5.png>
+Package pdftex.def Info: plots/polya-urn-5.png used on input line 84.
 (pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
@@ -212,10 +213,11 @@ Package caption Warning: \subcaption
 (caption)                outside box or environment on input line 85.
 See the caption package documentation for explanation.
 
-<polya-urn-50.png, id=15, 602.25pt x 200.75pt>
-File: polya-urn-50.png Graphic file (type png)
- <use polya-urn-50.png>
-Package pdftex.def Info: polya-urn-50.png used on input line 87.
+<plots/polya-urn-50.png, id=15, 602.25pt x 200.75pt>
+File: plots/polya-urn-50.png Graphic file (type png)
+
+<use plots/polya-urn-50.png>
+Package pdftex.def Info: plots/polya-urn-50.png used on input line 87.
 (pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
@@ -224,7 +226,7 @@ Package caption Warning: \subcaption
 See the caption package documentation for explanation.
 
 [2 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalPr
-oject/crp.png>]
+oject/plots/crp.png>]
 Missing character: There is no Æ in font ptmr7t!
 Missing character: There is no › in font ptmr7t!
 
@@ -238,30 +240,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--108
  []
 
 [3 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalPr
-oject/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/
-STA561/STA561FinalProject/polya-urn-5.png> <C:/Users/dipesh/Desktop/GoogleDrive
-/GradClasses/SemIII/STA561/STA561FinalProject/polya-urn-50.png>]
+oject/plots/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/S
+emIII/STA561/STA561FinalProject/plots/polya-urn-5.png> <C:/Users/dipesh/Desktop
+/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProject/plots/polya-urn-50.pn
+g>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
-<dpgmm.png, id=31, 1204.5pt x 602.25pt>
-File: dpgmm.png Graphic file (type png)
- <use dpgmm.png>
-Package pdftex.def Info: dpgmm.png used on input line 132.
+ <plots/dpgmm.png, id=31, 1204.5pt x 602.25pt>
+File: plots/dpgmm.png Graphic file (type png)
+ <use plots/dpgmm.png>
+Package pdftex.def Info: plots/dpgmm.png used on input line 132.
 (pdftex.def)             Requested size: 238.49341pt x 119.24402pt.
 
-<dpmeans.png, id=32, 1204.5pt x 602.25pt>
-File: dpmeans.png Graphic file (type png)
- <use dpmeans.png>
-Package pdftex.def Info: dpmeans.png used on input line 135.
+<plots/dpmeans.png, id=32, 1204.5pt x 602.25pt>
+File: plots/dpmeans.png Graphic file (type png)
+ <use plots/dpmeans.png>
+Package pdftex.def Info: plots/dpmeans.png used on input line 135.
 (pdftex.def)             Requested size: 238.49341pt x 119.24402pt.
- [4 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalP
-roject/dpgmm.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA56
-1/STA561FinalProject/dpmeans.png>]
+
+[4 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalPr
+oject/plots/dpgmm.png> <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/
+STA561/STA561FinalProject/plots/dpmeans.png>]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 198.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
@@ -272,30 +276,30 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 294.
  [6] [7]
 (C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
-ct\final_project.aux) ) 
+ct\Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3070 strings out of 493706
- 46227 string characters out of 3144580
+ 3072 strings out of 493706
+ 46320 string characters out of 3144580
  114631 words of memory out of 3000000
  6376 multiletter control sequences out of 15000+200000
  20625 words of font info for 41 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,9n,40p,583b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on final_project.pdf (7 pages, 204791 bytes).
+ 42i,9n,40p,491b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on Report.pdf (7 pages, 204251 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

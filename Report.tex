@@ -59,7 +59,7 @@ Finally, CRP specifies a distribution over partitions/table assignments but does
 Fig. \ref{fig:crp} shows how the total number of detected clusters increases with increasing $\alpha$ value.
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=.5\linewidth]{crp.png}
+\includegraphics[width=.5\linewidth]{plots/crp.png}
 \caption{Number of distinct tables for different $\alpha$ values}
 %\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
 \label{fig:crp}
@@ -78,13 +78,13 @@ Fig. \ref{fig:polya} shows the density of colors in the urn for several runs. We
   \centering
   \caption{Density of colors for different $\alpha$ values with standard normal as base distribution}
 \label{fig:polya}
-  \includegraphics[width=.5\linewidth]{polya-urn-1.png}
+  \includegraphics[width=.5\linewidth]{plots/polya-urn-1.png}
   \subcaption{$\alpha=1$}
   \label{fig:polya1}
-  \includegraphics[width=.5\linewidth]{polya-urn-5.png}
+  \includegraphics[width=.5\linewidth]{plots/polya-urn-5.png}
   \subcaption{$\alpha=5$}
   \label{fig:polya5}
-  \includegraphics[width=.5\linewidth]{polya-urn-50.png}
+  \includegraphics[width=.5\linewidth]{plots/polya-urn-50.png}
   \subcaption{$\alpha=50$}
   \label{fig:polya50}
 \end{figure}
@@ -123,16 +123,16 @@ DP-Means is a hard clustering algorithm, obtained by the asymptotic behavior of 
 
 \section{Data}
 We apply the above techniques to McDonald's item-nutrition dataset to cluster food items into groups. The dataset consists of 325 rows where each row is a McDonald's food item and 14 columns which make up their nutritional profile, namely, total fat, cholesterol, sodium, dietary fiber, sugars, protein, vitamin A, vitamin C, calcium, iron, calories from fat, saturated fat, trans fat and carbohydrates.
- 
+
 \section{Results}
 We applied DPGMM and DP-Means to McDonald’s item-nutrition dataset to cluster food items into groups based on the values of their nutritional parameters. We got around 11 clusters with separate clusters for burgers, lowfat drinks, breakfast items, desserts etc. Fig \ref{fig:dpgmm} and Fig. \ref{fig:dpmeans} show the nutrition profiles for select items from three different clusters for both DPGMM and DP-Means respectively.
 
 \begin{figure}
   \centering
-  \includegraphics[width=.6\linewidth]{dpgmm.png}
+  \includegraphics[width=.6\linewidth]{plots/dpgmm.png}
   \caption{DP-GMM}
   \label{fig:dpgmm}
-  \includegraphics[width=.6\linewidth]{dpmeans.png}
+  \includegraphics[width=.6\linewidth]{plots/dpmeans.png}
   \caption{DP-Means}
   \label{fig:dpmeans}
 \end{figure}

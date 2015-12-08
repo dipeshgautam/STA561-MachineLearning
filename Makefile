@@ -1,23 +1,23 @@
-final_project.pdf: final_project.tex crp.png polya-urn-1.png polya-urn-5.png polya-urn-50.png dpgmm.png dpmeans.png
-	pdflatex final_project
-	pdflatex final_project
-	pdflatex final_project
+Report.pdf: Report.tex plots/crp.png plots/polya-urn-1.png plots/polya-urn-5.png plots/polya-urn-50.png plots/dpgmm.png plots/dpmeans.png
+	pdflatex Report
+	pdflatex Report
+	pdflatex Report
 
-polya-urn-1.png polya-urn-5.png polya-urn-50.png: Polya.R
-	Rscript Polya.R
+plots/polya-urn-1.png plots/polya-urn-5.png plots/polya-urn-50.png: codes/Polya.R
+	Rscript codes/Polya.R
 
-crp.png: CRP.R
-	Rscript CRP.R
+plots/crp.png: codes/CRP.R
+	Rscript codes/CRP.R
 
-dpgmm.png: dpgmm-plot.R clusters-dpgmm.txt mcdonalds-normalized-data.txt
-	Rscript dpgmm-plot.R
+plots/dpgmm.png: codes/dpgmm-plot.R data/clusters-dpgmm.txt data/mcdonalds-normalized-data.txt
+	Rscript codes/dpgmm-plot.R
 
-clusters-dpgmm.txt: dp-gmm.py
-	python dp-gmm.py
+data/clusters-dpgmm.txt: codes/dp-gmm.py
+	python codes/dp-gmm.py
 
-dpmeans.png: dp-means-plot.R dp-means.R
-	Rscript dp-means-plot.R
+plots/dpmeans.png: codes/dp-means-plot.R codes/dp-means.R
+	Rscript codes/dp-means-plot.R
     
     
     
-all: final_project.pdf
+all: Report.pdf

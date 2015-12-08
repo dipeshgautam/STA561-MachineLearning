@@ -1,4 +1,4 @@
-source("dp-means.R")
+source("codes/dp-means.R")
 
 data1 = read.table("mcdonalds-normalized-data.txt", header = T, sep = "\t", comment.char = "", quote = "")
 mcd <- data1[ ,1:14]
@@ -21,7 +21,7 @@ cluster_breakfast = data1[data1$clusters==5, ]
 colors1 <- c("red", "orange", "yellow")
 colors2 <- c("blue", "cyan", "purple")
 colors3 <- c("green", "darkolivegreen1", "darkgreen")
-png("dpmeans.png", width =1200, height =600)
+png("plots/dpmeans.png", width =1200, height =600)
 par(mfrow=c(1,3))
 
 barplot(as.matrix(cluster_burgers[1:3,1:14]), beside=T, 

@@ -38,14 +38,14 @@ polya_urn_model_plots = function(num_balls, alpha) {
   pl + theme(legend.position="none")
 }
 
-png("polya-urn-1.png", width =600, height =200)
+png("plots/polya-urn-1.png", width =600, height =200)
 polya_urn_model_plots(10, 1)
 dev.off()
 
-png("polya-urn-5.png", width =600, height =200)
+png("plots/polya-urn-5.png", width =600, height =200)
 polya_urn_model_plots(10, 5)
 dev.off()
 
-png("polya-urn-50.png", width =600, height =200)
+png("plots/polya-urn-50.png", width =600, height =200)
 polya_urn_model_plots(10, 50)
 dev.off()

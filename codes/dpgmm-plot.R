@@ -1,6 +1,6 @@
 library(plyr)
-clusters_dpgmm= read.table("clusters-dpgmm.txt", sep=",", comment.char="", quote="")
-normalized_mcdonalds = read.table("mcdonalds-normalized-data.txt", header = T, sep = "\t", comment.char = "", quote = "")
+clusters_dpgmm= read.table("data/clusters-dpgmm.txt", sep=",", comment.char="", quote="")
+normalized_mcdonalds = read.table("data/mcdonalds-normalized-data.txt", header = T, sep = "\t", comment.char = "", quote = "")
 data = cbind(normalized_mcdonalds,clusters_dpgmm)
 data = rename(data, c("V1"= "clusters"))
 a=count(data$clusters)
@@ -20,7 +20,7 @@ colors2 <- c("blue", "cyan", "purple")
 colors3 <- c("green", "darkolivegreen1", "darkgreen")
 
 #jpeg(file ="dpgmm.jpeg", width =1000, height =600)
-png("dpgmm.png", width =1200, height =600)
+png("plots/dpgmm.png", width =1200, height =600)
 par(mfrow=c(1,3))
 
 barplot(as.matrix(cluster_burgers[1:3,1:14]), beside=T, 

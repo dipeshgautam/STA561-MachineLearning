@@ -20,7 +20,7 @@ for (alpha in Alpha){
   tables = c(tables,max(crp(1000,alpha)))
 }
 
-png("crp.png", width = 1000, height=600)
+png("plots/crp.png", width = 1000, height=600)
 barplot(names.arg=Alpha, tables, col="mediumvioletred", main='CRP for different alpha values,
         N=1000', xlab= "Alpha", ylab = "Number of distinct tables", cex.main=2.5,
         cex.axis = 1.25, cex.names=1.5, cex.lab=1.5)
