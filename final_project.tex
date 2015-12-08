@@ -9,8 +9,7 @@
 
 
 \author{
-Radhika Anand, Dipesh Gautam, Princeton Lee\thanks{ Use footnote for providing further information
-about author (webpage, alternative address)} \\
+Radhika Anand, Dipesh Gautam, Princeton Lee\\
 Department of Statistical Sciences\\
 Duke University\\
 }
@@ -25,39 +24,38 @@ Duke University\\
 
 \maketitle
 
-\begin{abstract}
-
-\end{abstract}
-
 \section{Introduction}
 Standard clustering algorithms like K-Means and Gaussian Mixture Models require us to know the total number of clusters a-priori. This has two problems:
 \begin{itemize}
 \item We do not always know the number of clusters a-priori
-\item Most real-world problems don’t have a fixed number of clusters
+\item Most real-world problems don't have a fixed number of clusters
 \end{itemize}
-This brings us to a class of algorithms called Non-Parametric Bayes, which assumes that true dimensionality is unbounded and allows the parameters to grow with growing data. It doesn’t require a prior specification of the number of latent clusters, which it instead infers from the data itself.
+This brings us to a class of algorithms called Non-Parametric Bayes, which assumes that true dimensionality is unbounded and allows parameters to grow with growing data. This use of countably infinite mixtures (which can easily be treated in a Bayesian framework) bypasses the need to determine the exact number of components/clusters a-priori. Also, a countably infinite mixture is more realistic than a mixture with small number of components.
 
-Commonly studied non-parametric clustering techniques include:
+Commonly studied non-parametric Bayes techniques include:
 \begin{enumerate}
-\item Chinese Restaurant Process
+\item Chinese Restaurant Process (CRP)
 \item Polya Urn Model
 \item Dirichlet Process
-\item Indian Buffet Process (for feature allocation)
+\item Indian Buffet Process (IBP) [for feature allocation]
 \end{enumerate}
 
+We worked on Indian Buffet Process (IBP) as part of our class, Statistical Computation, last semester where we used IBP to detect base images used to construct several images. Thus, we studied the application of non-parametric Bayes in feature allocation. We however could not dive into its applications in clustering, which motivated us to study them as part of our Machine Learning project this semester.
 
+In this report, we begin with a discussion of CRP and Polya Urn Models and proceed to the study of Dirichlet Process Mixture Models [1] and DP-Means Algorithm [2] for clustering. We then test the later two on McDonald's dataset of item nutrition profiles to obtain food clusters.
+ 
 \section{Discussion of different clustering models}
 \subsection{Chinese Restaurant Process}
-Consider data points as customers who visit a restaurant and clusters as tables in that restaurant. CRP is based on the idea that there are infinite number of tables in the restaurant and infinite number of seats at each table. The first customer sits at a table. The (n+1)st customer then sits at a new table with probability $\frac{\alpha}{(n+\alpha)}$ and on an occupied table with probability $\frac{n_k}{(n+\alpha)}$, where $n_k$ is the number of customers occupying table k.
+Consider data points as customers who visit a restaurant and clusters as tables in that restaurant. CRP is based on the idea that there are infinite number of tables in the restaurant and infinite number of seats at each table. The first customer sits at a table. The (n+1)-st customer then sits at a new table with probability $\frac{\alpha}{(n+\alpha)}$ and on an occupied table with probability $\frac{n_k}{(n+\alpha)}$, where $n_k$ is the number of customers occupying table k.
 
 Points to note:
 \begin{enumerate}
 \item The more the customers at a table, the more probable it is that the next customer will join that table. This is the rich-get-richer property.
 \item Probability of a new table (cluster) is proportional to $\alpha$. Thus, we consider $\alpha$ as a dispersion parameter which determines the total number of clusters. The higher the $\alpha$, the higher is the number of clusters in a given set of data.
 \end{enumerate}
-Finally, CRP specifies a distribution over partitions/table assignments but does not assign parameters to tables (which can be done by the Polya Urn Model as in the next section).
+Finally, CRP specifies a distribution over partitions/table assignments but does not assign parameters to tables.
 
-Fig. \ref{fig:crp} below shows how the total number of detected clusters increases with increasing $\alpha$ value.
+Fig. \ref{fig:crp} shows how the total number of detected clusters increases with increasing $\alpha$ value.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=.5\linewidth]{crp.png}
@@ -66,7 +64,6 @@ Fig. \ref{fig:crp} below shows how the total number of detected clusters increas
 \label{fig:crp}
 \end{center}
 \end{figure}
-
 
 \subsection{Polya Urn Model}
 Consider data points as balls in an urn and their colors as the clusters they belong to. We now pick a ball from the urn, note its color and drop that ball and another ball of the same color back into the urn.
@@ -90,9 +87,8 @@ Fig. \ref{fig:polya} shows the density of colors in the urn for several runs. We
   \subcaption{$\alpha=50$}
   \label{fig:polya50}
 \end{figure}
-
-\subsection{Dirichlet Process Mixture Models}
-Suppose we have multivariate, real-valued data y1,…,yn, which is exchangeable, a DPMM is defined as follows:
+\subsection{Dirichlet Process Mixture Models (DPMM)}
+Suppose we have multivariate, real-valued data $y_1,...,y_n$, which is exchangeable, a DPMM is defined as follows:
 \begin{eqnarray*}
 y_i|\theta_i \sim F(\theta_i)\\
 \theta_i|G \sim G\\
