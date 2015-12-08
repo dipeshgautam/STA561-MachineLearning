@@ -1,6 +1,7 @@
 \documentclass{article} % For LaTeX2e
 \usepackage{final_project,times}
 \usepackage{graphicx}
+\usepackage{subcaption}
 %\documentstyle[nips12submit_09,times,art10]{article} % For LaTeX 2.09
 
 
@@ -74,7 +75,30 @@ Thus, it is similar to CRP in that it follows the rich-get-richer property and h
 
 Further, it not only specifies a distribution over partitions but also assigns parameters to them. It is like a distribution over distributions as can be visualized from the various runs of the same Polya Urn Model in the plots below. This brings us to the Dirichlet Process.
 
-Fig. \ref{fig:polya} below show the density of colors in the urn for several runs. We use standard normal as the base color distribution. Thus, as $\alpha$ increases i.e. we sample more and more new colors from the base distribution, we see that the plots tend towards standard normal i.e. they approach the base distribution.
+Fig. \ref{fig:polya} shows the density of colors in the urn for several runs. We use standard normal as the base color distribution. Thus, as $\alpha$ increases i.e. we sample more and more new colors from the base distribution, we see that the plots tend towards standard normal i.e. they approach the base distribution.
+\begin{figure}
+  \centering
+  \caption{Density of colors for different $\alpha$ values with standard normal as base distribution}
+\label{fig:polya}
+  \includegraphics[width=\linewidth]{polya-urn-1.png}
+  \subcaption{}
+  \label{fig:polya1}
+  \includegraphics[width=\linewidth]{polya-urn-5.png}
+  \subcaption{}
+  \label{fig:polya5}
+  \includegraphics[width=\linewidth]{polya-urn-50.png}
+  \subcaption{}
+  \label{fig:polya50}
+\end{figure}
+
+\subsection{Dirichlet Process Mixture Models}
+Suppose we have multivariate, real-valued data y1,…,yn, which is exchangeable, a DPMM is defined as follows:
+\begin{eqnarray*}
+y_i|\theta_i \sim F(\theta_i)\\
+\theta_i|G \sim G\\
+G \sim D(G_0, \alpha)
+\end{eqnarray*}
+i.e., we model the distribution from which $y_i$'s are drawn as a mixture of distributions of the form $F(\theta)$, which is normal for a Gaussian DPMM, with $G$ as the mixing distribution over parameters $\theta$. Further, the prior over $G$ is a Dirichlet Process with base distribution $G_0$ and dispersion parameter $\alpha$.
 
 
 \section{Method}
