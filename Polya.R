@@ -1,3 +1,4 @@
+library(ggplot2)
 polya_urn_model = function(base_color_distribution, num_balls, alpha) {
   balls = c()
   

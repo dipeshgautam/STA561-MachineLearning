@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  7 DEC 2015 21:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.11)  7 DEC 2015 22:55
 entering extended mode
 **C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProj
 ect/final_project.tex
@@ -122,19 +122,19 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 (C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
 ct\final_project.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -156,61 +156,66 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
+(Font)              <5> on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 30.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <crp.png, id=14, 1003.75p
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <crp.png, id=12, 1003.75p
 t x 602.25pt>
 File: crp.png Graphic file (type png)
 
 <use crp.png>
-Package pdftex.def Info: crp.png used on input line 63.
+Package pdftex.def Info: crp.png used on input line 61.
 (pdftex.def)             Requested size: 198.7425pt x 119.24402pt.
- <polya-urn-1.png, id=15, 602.25pt x 200.75pt>
+ <polya-urn-1.png, id=13, 602.25pt x 200.75pt>
 File: polya-urn-1.png Graphic file (type png)
 
 <use polya-urn-1.png>
-Package pdftex.def Info: polya-urn-1.png used on input line 83.
+Package pdftex.def Info: polya-urn-1.png used on input line 80.
 (pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 84.
+(caption)                outside box or environment on input line 81.
 See the caption package documentation for explanation.
+
+
+Package caption Warning: \subcaption
+(caption)                outside box or environment on input line 81.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 81.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 81.
+<polya-urn-5.png, id=14, 602.25pt x 200.75pt>
+File: polya-urn-5.png Graphic file (type png)
+ <use polya-urn-5.png>
+Package pdftex.def Info: polya-urn-5.png used on input line 83.
+(pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
 Package caption Warning: \subcaption
 (caption)                outside box or environment on input line 84.
 See the caption package documentation for explanation.
 
-<polya-urn-5.png, id=16, 602.25pt x 200.75pt>
-File: polya-urn-5.png Graphic file (type png)
- <use polya-urn-5.png>
-Package pdftex.def Info: polya-urn-5.png used on input line 86.
+<polya-urn-50.png, id=15, 602.25pt x 200.75pt>
+File: polya-urn-50.png Graphic file (type png)
+ <use polya-urn-50.png>
+Package pdftex.def Info: polya-urn-50.png used on input line 86.
 (pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
 
 
@@ -218,37 +223,19 @@ Package caption Warning: \subcaption
 (caption)                outside box or environment on input line 87.
 See the caption package documentation for explanation.
 
-<polya-urn-50.png, id=17, 602.25pt x 200.75pt>
-File: polya-urn-50.png Graphic file (type png)
- <use polya-urn-50.png>
-Package pdftex.def Info: polya-urn-50.png used on input line 89.
-(pdftex.def)             Requested size: 198.7425pt x 66.2477pt.
+[2 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalPr
+oject/crp.png>] [3 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA5
+61/STA561FinalProject/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/Gra
+dClasses/SemIII/STA561/STA561FinalProject/polya-urn-5.png> <C:/Users/dipesh/Des
+ktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProject/polya-urn-50.png>
+]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 160.
 
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 90.
-See the caption package documentation for explanation.
-
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ¦ in font ptmr7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalP
-roject/crp.png>] [3 <C:/Users/dipesh/Desktop/GoogleDrive/GradClasses/SemIII/STA
-561/STA561FinalProject/polya-urn-1.png> <C:/Users/dipesh/Desktop/GoogleDrive/Gr
-adClasses/SemIII/STA561/STA561FinalProject/polya-urn-5.png> <C:/Users/dipesh/De
-sktop/GoogleDrive/GradClasses/SemIII/STA561/STA561FinalProject/polya-urn-50.png
->]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 164.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [4]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 260.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
  [5]
 (C:\Users\dipesh\Desktop\GoogleDrive\GradClasses\SemIII\STA561\STA561FinalProje
 ct\final_project.aux) ) 
@@ -259,7 +246,7 @@ Here is how much of TeX's memory you used:
  6366 multiletter control sequences out of 15000+200000
  20625 words of font info for 41 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,10n,40p,597b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,9n,40p,583b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program 
@@ -268,15 +255,13 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on final_project.pdf (5 pages, 171434 bytes).
+/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on final_project.pdf (5 pages, 157125 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
