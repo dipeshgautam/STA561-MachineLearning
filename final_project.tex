@@ -44,7 +44,8 @@ We worked on Indian Buffet Process (IBP) as part of our class, Statistical Compu
 
 In this report, we begin with a discussion of CRP and Polya Urn Models and proceed to the study of Dirichlet Process Mixture Models [1] and DP-Means Algorithm [2] for clustering. We then test the later two on McDonald's dataset of item nutrition profiles to obtain food clusters.
 
-\section{Discussion of different clustering models}
+\section{Discussion of various clustering models}
+This section describes the working of CRP and Polya Urn Models in detail.
 \subsection{Chinese Restaurant Process}
 Consider data points as customers who visit a restaurant and clusters as tables in that restaurant. CRP is based on the idea that there are infinite number of tables in the restaurant and infinite number of seats at each table. The first customer sits at a table. The (n+1)-st customer then sits at a new table with probability $\frac{\alpha}{(n+\alpha)}$ and on an occupied table with probability $\frac{n_k}{(n+\alpha)}$, where $n_k$ is the number of customers occupying table k.
 
@@ -87,6 +88,9 @@ Fig. \ref{fig:polya} shows the density of colors in the urn for several runs. We
   \subcaption{$\alpha=50$}
   \label{fig:polya50}
 \end{figure}
+\
+\section{Methodology}
+We use the above models to develop clustering techniques like Dirichlet Process Mixture Models and DP-Means which are apply them to a real dataset.
 \subsection{Dirichlet Process Mixture Models (DPMM)}
 Suppose we have multivariate, real-valued data $y_1,...,y_n$, which is exchangeable, a DPMM is defined as follows:
 \begin{eqnarray*}
@@ -95,7 +99,6 @@ y_i|\theta_i \sim F(\theta_i)\\
 G \sim D(G_0, \alpha)
 \end{eqnarray*}
 i.e., we model the distribution from which $y_i$'s are drawn as a mixture of distributions of the form $F(\theta)$, which is normal for a Gaussian DPMM, with $G$ as the mixing distribution over parameters $\theta$. Further, the prior over $G$ is a Dirichlet Process with base distribution $G_0$ and dispersion parameter $\alpha$.
-
 
 \subsection{DP-means}
 DP-Means is a hard clustering algorithm, obtained by the asymptotic behavior of a DPMM, which behaves similar to K-Means with the exception that a new cluster is created whenever a point is more than ƛ away from every existing cluster centroid. The algorithm is as follows:\\
@@ -118,9 +121,11 @@ DP-Means is a hard clustering algorithm, obtained by the asymptotic behavior of 
 \end{itemize}
 \end{enumerate}
 
-\section{Method}
+\section{Data}
+We apply the above techniques to McDonald's item-nutrition dataset to cluster food items into groups. The dataset consists of 325 rows where each row is a McDonald's food item and 14 columns which make up their nutritional profile, namely, total fat, cholesterol, sodium, dietary fiber, sugars, protein, vitamin A, vitamin C, calcium, iron, calories from fat, saturated fat, trans fat and carbohydrates.
+ 
 \section{Results}
-We applied DPGMM and DP-Means to McDonald’s item-nutrition dataset to cluster food items into groups. We got around 11 clusters with separate clusters for burgers, lowfat drinks, breakfast items, desserts etc. Fig \ref{fig:dpgmm} and Fig. \ref{fig:dpmeans} show the nutrition profiles for select items from three different clusters for both DPGMM and DP-Means respectively.
+We applied DPGMM and DP-Means to McDonald’s item-nutrition dataset to cluster food items into groups based on the values of their nutritional parameters. We got around 11 clusters with separate clusters for burgers, lowfat drinks, breakfast items, desserts etc. Fig \ref{fig:dpgmm} and Fig. \ref{fig:dpmeans} show the nutrition profiles for select items from three different clusters for both DPGMM and DP-Means respectively.
 
 \begin{figure}
   \centering
@@ -133,7 +138,6 @@ We applied DPGMM and DP-Means to McDonald’s item-nutrition dataset to cluster 
 \end{figure}
 
 
-\section{Discussion}
 \section{Conclusions}
 
 \subsection{Style}
