@@ -1,9 +1,7 @@
-
 import numpy as np
 from sklearn import mixture
 
 FILENAME = "data/mcdonalds-normalized-data.txt"
-
 x = np.loadtxt(open(FILENAME, "rb"), delimiter = "\t", skiprows = 1, usecols = range(14))
 dpgmm = mixture.DPGMM(n_components = 25)
 dpgmm.fit(x)
