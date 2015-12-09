@@ -50,7 +50,7 @@ This section describes the working of Chinese Restaurant Process and Polya Urn M
 \subsection{Chinese Restaurant Process}
 Consider data points as customers who visit a restaurant and clusters as tables in that restaurant. CRP is based on the idea that there are infinite number of tables in the restaurant and infinite number of seats at each table. The first customer sits at a table. The (n+1)-st customer then sits at a new table with probability $\frac{\alpha}{(n+\alpha)}$ and on an occupied table with probability $\frac{n_k}{(n+\alpha)}$, where $n_k$ is the number of customers occupying table $k$.
 
-Points to note:
+Important points:
 \begin{enumerate}
 \item The more the customers at a table, the more probable it is that the next customer will join that table. This is the rich-get-richer property.
 \item Probability of a new table (cluster) is proportional to $\alpha$. Thus, we consider $\alpha$ as a dispersion parameter which determines the total number of clusters. The higher the $\alpha$, the higher is the number of clusters in a given set of data.
