@@ -1,8 +1,8 @@
 set.seed(1000)
-crp = function(num.customers, alpha) {
-  table <- c(1)
-  next.table <- 2
-  for (i in 1:(num.customers-1)) {
+crp = function(n, alpha) {
+  culster <- c(1)
+  pro.cluster <- 2
+  for (i in 1:(n-1)) {
     if (runif(1,0,1) < alpha / (alpha + i)) {
       table <- c(table, next.table)
       next.table <- next.table+1
