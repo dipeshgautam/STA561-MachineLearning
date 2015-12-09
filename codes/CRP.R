@@ -1,23 +1,23 @@
 set.seed(1000)
 crp = function(n, alpha) {
-  culster <- c(1)
-  pro.cluster <- 2
+  cluster <- c(1)
+  newCluster <- 2
   for (i in 1:(n-1)) {
     if (runif(1,0,1) < alpha / (alpha + i)) {
-      table <- c(table, next.table)
-      next.table <- next.table+1
+      cluster <- c(cluster, newCluster)
+      newCluster <- newCluster+1
     } else {
-      select.table <- table[sample(1:length(table), 1)]
-      table <- c(table, select.table)
+      sampled <- sample(cluster, 1)
+      cluster <- c(cluster, sampled)
     }
   }
-  table
+  cluster
 }
 
-tables =c()
+clusters =c()
 Alpha = c(1,5,10,20,30,50,70,100)
 for (alpha in Alpha){
-  tables = c(tables,max(crp(1000,alpha)))
+  clusters = c(clusters,max(crp(1000,alpha)))
 }
 
 png("plots/crp.png", width = 1000, height=600)
