@@ -4,19 +4,13 @@ data1 = read.table("data/mcdonalds-normalized-data.txt", header = T, sep = "\t",
 mcd <- data1[ ,1:14]
 colnames(mcd) <- c('x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14')
 
-
 data <- mcd
 dp.results <- dp.means(data, 1.6, tolerance=10e-4)
 data1$clusters = dp.results$assignments
 
-#ggplot(data, aes(x = x1, y = x2, color = dp.results$assignments)) + geom_point()
-
-
-
 cluster_burgers = data1[data1$clusters==2, ]
 cluster_lowfat = data1[data1$clusters==3, ]
 cluster_breakfast = data1[data1$clusters==5, ]
-
 
 colors1 <- c("red", "orange", "yellow")
 colors2 <- c("blue", "cyan", "purple")
@@ -37,4 +31,3 @@ barplot(as.matrix(cluster_breakfast[3:5,1:14]), beside=T,horiz=T,
         cex.lab = 2)
 
 dev.off()
-
